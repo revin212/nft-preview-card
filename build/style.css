@@ -672,8 +672,9 @@ video {
   background-color: hsl(216 50% 16% / var(--tw-bg-opacity));
 }
 
-.bg-cyan-primary\/50 {
-  background-color: hsl(178 100% 50% / 0.5);
+.bg-cyan-primary {
+  --tw-bg-opacity: 1;
+  background-color: hsl(178 100% 50% / var(--tw-bg-opacity));
 }
 
 .p-6 {
@@ -682,10 +683,6 @@ video {
 
 .pb-3 {
   padding-bottom: 0.75rem;
-}
-
-.font-main-font {
-  font-family: Outfit, sans-serif;
 }
 
 .text-xl {
@@ -737,10 +734,6 @@ video {
   opacity: 1;
 }
 
-main {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }
@@ -749,3 +742,4 @@ main {
   --tw-text-opacity: 1;
   color: hsl(178 100% 50% / var(--tw-text-opacity));
 }
+

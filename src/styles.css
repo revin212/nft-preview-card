@@ -4,6 +4,9 @@
 
 
 #img-container:hover #overlay{
-    background-color: hsla(178, 100%, 50%, 0.5);
     opacity: 1;
+}
+
+main {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
