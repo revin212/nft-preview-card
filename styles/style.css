@@ -733,10 +733,6 @@ video {
   opacity: 0;
 }
 
-#img-container:hover #overlay{
-  opacity: 1;
-}
-
 main {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -748,4 +744,8 @@ main {
 .hover\:text-cyan-primary:hover {
   --tw-text-opacity: 1;
   color: hsl(178 100% 50% / var(--tw-text-opacity));
+}
+
+.hover\:opacity-100:hover {
+  opacity: 1;
 }
