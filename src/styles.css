@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#img-container:hover #overlay{
+    background-color: hsla(178, 100%, 50%, 0.5);
+    opacity: 1;
+}

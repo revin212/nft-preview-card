@@ -3,26 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="./styles/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | NFT preview card component</title>
 
 </head>
-<body>
 
-  Equilibrium #3429
+<body class="flex justify-center items-center bg-primary-bg font-main-font">
 
-  Our Equilibrium collection promotes balance and calm.
+  <!-- main content -->
+  <main class="bg-card-bg w-full max-w-[320px] my-4 p-6 rounded-xl">
+    <!-- image container -->
+    <div class="rounded-lg overflow-hidden relative hover:cursor-pointer" id="img-container">
+      <!-- main image -->
+      <img src="./images/image-equilibrium.jpg" alt="">
+      
+      <!-- hover overlay -->
+      <div id="overlay" class="flex justify-center items-center w-full h-full absolute top-0 left-0 bg-cyan-primary opacity-0">
+        <img id="view-icon" class="w-10" src="./images/icon-view.svg" alt="">
+      </div>
+    </div>
 
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
+    <!-- desc container -->
+    <div>
+      <!-- title -->
+      <h1 class="mb-4 mt-6 text-white font-semibold text-xl hover:text-cyan-primary hover:cursor-pointer">Equilibrium #3429</h1>
 
-  <div class="attribution">
+      <!-- description -->
+      <p class="my-4 font-light text-soft-blue-primary text-[0.9rem]">Our Equilibrium collection promotes balance and calm.</p>
+
+      <!-- nft value -->
+      <div class="flex justify-between border-b-2 border-b-dark-blue-line pb-3">
+        <!-- etherium value -->
+        <div class="flex items-center">
+          <img src="./images/icon-ethereum.svg" alt="">
+          <p class="ml-1 font-semibold text-cyan-primary text-sm">0.041 ETH</p>
+        </div>
+
+        <!-- time left -->
+        <div class="flex items-center">
+          <img src="./images/icon-clock.svg" alt="">
+          <p class="ml-1 font-normal text-sm text-soft-blue-primary">3 days left</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer container -->
+    <div class="flex items-center mt-4">
+      <img class="w-8 border border-white rounded-full" src="./images/image-avatar.png" alt="">
+      <p class="ml-3 text-soft-blue-primary font-normal text-sm">Creation of <span class="text-white hover:text-cyan-primary hover:cursor-pointer">Jules Wyvern</span></p>
+    </div>
+  </main>
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>
